@@ -1,0 +1,24 @@
+{
+  "name": "express-sequelize-mysql-api",
+  "version": "1.0.0",
+  "description": "express sequelize mysql api ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "mysql",
+    "restapi"
+  ],
+  "author": "Yan Kyaw Moe",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.3"
+  }
+}
