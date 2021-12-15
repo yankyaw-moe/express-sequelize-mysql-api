@@ -3,13 +3,13 @@ module.exports = {
   USER: "ba1f3bfeb4b05f",
   PASSWORD: "039d88ae",
   DB: "heroku_6d6a04b30ef964d",
-  // dialect: "mysql",
-  // pool: {
-  //   max: 5,
-  //   min: 0,
-  //   acquire: 30000,
-  //   idle: 10000
-  // }
+  dialect: "mysql",
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  }
 };
 
 // module.exports = {
