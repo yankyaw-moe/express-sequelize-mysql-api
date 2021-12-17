@@ -16,13 +16,36 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const db = require('./app/models');
+const Role = db.role;
+// db.sequelize.sync().then(() => {
+//     initial();
+// })
 db.sequelize.sync();
 // db.sequelize.sync({ force: true }).then(() => {
 //     console.log('Drop and re-sync db');
 // });
 
+// function initial() {
+//     Role.create({
+//         id: 1,
+//         name: 'user'
+//     });
 
+//     Role.create({
+//         id: 2,
+//         name: 'moderator'
+//     });
+
+//     Role.create({
+//         id: 3,
+//         name: 'admin'
+//     });
+// }
+
+// routes
 require('./app/routes/tutorial.routes')(app);
+require('./app/routes/auth.routes')(app);
+require('./app/routes/user.routes')(app);
 
 // simple route
 // app.get('/', (req, res) => {
